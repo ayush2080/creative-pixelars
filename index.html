@@ -20,13 +20,21 @@
         <div><span id="minutes">00</span><small>Minutes</small></div>
         <div><span id="seconds">00</span><small>Seconds</small></div>
       </div>
-      <form class="email-form" action="https://formsubmit.co/d59f104293182beb92a9f7dd7b413258" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <input type="hidden" name="_subject" value="New Subscriber!">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-        <button type="submit">Notify Me</button>
-      </form>
+      <form action="https://formsubmit.co/d59f104293182beb92a9f7dd7b413258" method="POST">
+      <input type="email" name="email" required placeholder="Enter your email">
+  
+     <!-- optional spam prevention (honeypot) -->
+     <input type="text" name="_honey" style="display:none">
+  
+     <!-- prevent CAPTCHA popup -->
+     <input type="hidden" name="_captcha" value="false">
+
+     <!-- optional redirect after submission -->
+     <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+     <button type="submit">Notify Me</button>
+     </form>
+
       <p class="text">Stay tuned! Our creative space is under construction.</p>
     </div>
   </div>
